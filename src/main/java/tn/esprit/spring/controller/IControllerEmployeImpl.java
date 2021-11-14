@@ -55,11 +55,7 @@ public class IControllerEmployeImpl  {
 
 
 	
-	public int getNombreEmployeJPQL() {
-		
-		return iemployeservice.getNombreEmployeJPQL();
-	}
-
+	
 
 
 

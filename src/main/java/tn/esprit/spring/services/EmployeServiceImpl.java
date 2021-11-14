@@ -140,20 +140,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 
 
-	public int getNombreEmployeJPQL() {
-		int i =0 ;
-		try {
-			
-		logger.info("il existe des employe ? ");
-		logger.debug("afficher nombre des employe");
-		 i = employeRepository.countemp();
-				}catch (Exception e) {
-			logger.error("il n'existe aucun employer pour le moment ");
-				}
-			return i ;
 	
-		
-	}
 
 
 

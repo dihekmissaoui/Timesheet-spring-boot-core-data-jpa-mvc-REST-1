@@ -16,6 +16,7 @@ public class IControllerEmployeImplTest {
 	Employe e = new Employe();
 	EmployeServiceImpl EmployeServiceImpl = new EmployeServiceImpl();
 
+	@Test
 public void testAjouterEmploye () {
 
 	e.setPrenom("xxx");
@@ -31,7 +32,7 @@ public void testAjouterEmploye () {
 
 }
 
-
+   @Test
 public void testMettreAjourEmailByEmployeId () {
 	
 	e.setNom("ali");
@@ -42,7 +43,7 @@ public void testMettreAjourEmailByEmployeId () {
 	EmployeServiceImpl.mettreAjourEmailByEmployeId(null,1);
 }
 			
-
+    @Test
 public void testDeleteEmployeById() {
 	int EmployeById = 0 ;
 	int c = e.getId();
@@ -51,17 +52,9 @@ public void testDeleteEmployeById() {
 
 	
 }
+     
 
- public void testGetNombreEmployeJPQL() {
-	 
-	int k = EmployeServiceImpl.getNombreEmployeJPQL();
- Assert.assertNotEquals(k, 0);
-
- }
-
- 
-
-
+       @Test
 	public void testGetEmployePrenomById()
 	{
 		int id = 0;
@@ -70,10 +63,8 @@ public void testDeleteEmployeById() {
 		EmployeServiceImpl.getEmployePrenomById(employeId);
 		
 	}
-
- public List<Employe>  testGetAllEmployes() {
-	 
-	return null;
+    
+ 
 
  }
 
@@ -123,6 +114,6 @@ public void testDeleteEmployeById() {
 
 
 
-}
+
 
 

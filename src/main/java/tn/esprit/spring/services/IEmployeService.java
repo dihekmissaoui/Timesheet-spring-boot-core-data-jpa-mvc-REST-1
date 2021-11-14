@@ -12,7 +12,7 @@ public interface IEmployeService {
 	public String getEmployePrenomById(int employeId);
 	public void deleteEmployeById(int employeId);
 
-	public int getNombreEmployeJPQL();
+	
 	
 	
 
